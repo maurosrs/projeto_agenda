@@ -51,6 +51,7 @@ ssh-add ~/.ssh/maurosrs_rsa
 
 git remote add origin git@github.com:maurosrs/projetoagenda.git
 
+
 git reset HEAD .env
 
 .gitignore
