@@ -4,6 +4,7 @@ python -m venv venv
 venv\Scripts\activate
 pip install django
 django-admin startproject project .
+python manage.py startapp contact
 
 Configurar o git
 
@@ -36,9 +37,9 @@ git remote rm origin
 
 git remote add origin git@github.com:maurosrs/projeto_agenda.git
 
-git push origin master
+git push origin main
 
-usar o gitbash
+usar no gitbash
 ssh-keygen -f ~/.ssh/maurosrs_rsa -t rsa -b 4096
 ssh-keygen -f ~/.ssh/maurosrs_rsa
 
@@ -49,7 +50,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC0qcMPNl4IyDoCGS1bJ4aZlGLtgDXaYphzKpP41EeY
 eval $(ssh-agent)
 ssh-add ~/.ssh/maurosrs_rsa
 
-git remote add origin git@github.com:maurosrs/projetoagenda.git
+git remote add origin git@github.com:maurosrs/projeto_agenda.git
 
 
 git reset HEAD .env
